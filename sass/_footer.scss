@@ -1,0 +1,34 @@
+.footer{
+    padding:2rem 0;
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: $color-white-transparent;
+    display: flex;
+    justify-content: center;
+    background-color: $color-secondary;
+    border-top:1px solid $color-white-transparent ;
+    :not(:last-child){
+        margin-right: 3rem;
+    }
+    &__item{
+        cursor: pointer;
+        position: relative;
+        &:hover{
+            &::after{
+                width:100%;
+                left: 0;
+            }
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            display: flex;
+            height: .2rem;
+            width: 0;
+            background-color: $color-white;
+            left: 50%;
+            transition: all .3s;
+
+        }
+    }
+}

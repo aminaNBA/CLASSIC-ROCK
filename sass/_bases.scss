@@ -1,0 +1,41 @@
+$background-btn:#ba7043;
+$raduis-btn:5rem;
+$color-primary:#0e1111;
+$color-secondary:#353839;
+$color-text:#333;
+$color-white:#fff;
+$color-dark:#000;
+$color-white-transparent:rgba($color-white, 0.8);
+
+$font-primary: 'Lobster', cursive;
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+::selection{
+    color: $color-dark;
+    background: $color-white;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    @include responsive(Medium_Screens){
+        font-size: 56.25%;
+    }
+    @include responsive(phone){
+        font-size: 43.75%;
+    }
+}
+
+body{
+    font-family: $font-primary;
+    color:$color-text;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: $color-primary;
+}

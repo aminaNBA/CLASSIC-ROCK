@@ -1,0 +1,11 @@
+@mixin section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+    width: 100%;
+    & .title{
+        font-size: 3rem;
+        margin: 5rem auto;
+        color: $color-white;
+    }
+}
